@@ -10,7 +10,7 @@
 
 #define a "Stacey"																					//define candidate name
 #define b "Claudia"
-int vote1=0,vote2=0,spoilt=0;																		//initialise vote variable
+int vote1=0,vote2=0,spoilt=0;															//initialise vote variable
 
 
 
@@ -38,18 +38,18 @@ void castvote ()																					//casting vote function
 	}
 	
 	printf("\nYour vote has been recorded. Thank you!\n");
-	getch();
+	
 }
 
-void countvote()																					//display vote count of each candidate
+void countvote()																//display vote count of each candidate
 {
 	printf("\n%s:  %d\n",a,vote1);
 	printf("%s:  %d\n",b,vote2);
 	printf("Spoilt votes: %d",spoilt);
-	getch();
+
 }
 
-void winner()																						//declare winner based on recorded votes
+void winner()																	//declare winner based on recorded votes
 {
 	if (vote1>vote2)
 	{
@@ -65,7 +65,7 @@ void winner()																						//declare winner based on recorded votes
 	}
 	
 	
-	getch();
+
 }
 
 
@@ -111,6 +111,6 @@ void main()																							//main function
 	
 	}while (n!=0);																						//exit program when input value=0
 	
-	getch();
+	
 
 }
